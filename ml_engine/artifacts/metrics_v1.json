@@ -1,0 +1,38 @@
+{
+  "test_samples": 450,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1_score": 1.0,
+  "false_positive_rate": 0.0,
+  "confusion_matrix": {
+    "tn": 300,
+    "fp": 0,
+    "fn": 0,
+    "tp": 150
+  },
+  "scenario_breakdown": {
+    "normal": {
+      "total": 175,
+      "false_positives": 0,
+      "false_positive_rate": 0.0
+    },
+    "backup": {
+      "total": 125,
+      "false_positives": 0,
+      "false_positive_rate": 0.0
+    },
+    "suspicious": {
+      "total": 150,
+      "true_positives": 150,
+      "detection_rate": 1.0
+    }
+  },
+  "avg_inference_latency_ms": 0.03627,
+  "train_samples": 900,
+  "schema_version": "1.0.0",
+  "model_type": "RandomForestClassifier",
+  "sklearn_version": "1.9.1",
+  "numpy_version": "2.5.5",
+  "joblib_version": "1.6.0",
+  "limitations": "Trained and evaluated exclusively on synthetic tabular records. risk_score is a model-derived 0-100 score, not a calibrated real-world probability. Does not provide real-world ransomware protection."
+}
